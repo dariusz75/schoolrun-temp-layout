@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'florencesansregular';
+    src: url('fonts/florsn01-webfont.woff2') format('woff2'),
+         url('fonts/florsn01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'florencesansbold';
+    src: url('fonts/florsn02-webfont.woff2') format('woff2'),
+         url('fonts/florsn02-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'florencesans_blackregular';
+    src: url('fonts/florsn33-webfont.woff2') format('woff2'),
+         url('fonts/florsn33-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background-color: #d8d8d8;
+  color: white;
+  font-family: 'florencesansregular', sans-serif;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.first-row {
+	padding-top: 20px;
+	background-color: white;
+}
+
+.home-run {
+	font-family: 'florencesansbold', sans-serif;
+	font-size: 20px;
+	padding: 12% 0;
+	text-align: left;
+	color: #082947;
+	border-right: solid 2px #e0e0e0;
+}
+
+.welcome {
+	font-family: 'florencesansbold', sans-serif;
+	font-size: 17px;
+	color: #ededed;
+	padding: 10% 0;
+}
+
+.small-menu-top {
+  height: 50px;
+  border-radius: 2px;
+  background-color: #082947;
+}
+
+.periods {
+  height: 55px;
+  margin: 10px 0;
+  border-radius: 2px;
+  background-color: #05d881;
+}
+
+.travel-type {
+  height: 55px;
+  margin: 10px 0;
+  background-color: #617688;
+}
+
+.travel-type a img {
+  margin: 20px auto;
+}
+
+.left-section {
+  /* background-color: #55D9D9; */
+  height: auto;
+}
+
+.middle-section {
+  /* background-color: #40A7A7; */
+  height: auto;
+}
+
+.right-section {
+  /* background-color: #328282; */
+  height: auto;
+}
+
+.co-emission {
+  height: 450px;
+  margin: 20px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.car-costs {
+  height: 350px;
+  margin: 10px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.journey-time {
+  height: 400px;
+  margin: 30px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.transport-modes {
+  height: 400px;
+  margin: 10px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.journeys-logged {
+  height: 400px;
+  margin: 30px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.adult-hours {
+  height: 375px;
+  margin: 20px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.no-emissions {
+  height: 375px;
+  margin: 30px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.transport-time {
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 100% 0, #90f6cc, #138893);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.active-time {
+  height: 200px;
+  margin: 30px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 100% 0, #ffb500, #ff8200);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
+
+.journey-distance {
+  height: 500px;
+  margin: 30px 0;
+  border-radius: 2px;
+  background-image: radial-gradient(circle at 50% 0, #13537d, #082947);
+  p {
+  	padding: 15px;
+  	margin: 10px;
+  	border-radius: 2px;
+	border: solid 1px #ffffff;
+	display: inline-block; 
+  }
+}
