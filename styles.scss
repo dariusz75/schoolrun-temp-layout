@@ -33,6 +33,39 @@ body {
   font-family: 'florencesansregular', sans-serif;
 }
 
+/* Extra Small */
+@media(max-width:767px){
+  body{
+    background-color: red;
+  }
+  .first-row {
+    img {
+      display: none;
+    }
+  }
+}
+
+/* Small */
+@media(min-width:768px) and (max-width:991px){
+  body{
+    background-color: yellow;
+  }
+}
+
+/* Medium */
+@media(min-width:992px) and (max-width:1199px){
+  body{
+    background-color: green;
+  }
+}
+
+/* Large */
+@media(min-width:1200px){
+  body{
+    background-color: blue;
+  }
+}
+
 .no-margin {
   margin: 0;
 }
@@ -40,6 +73,10 @@ body {
 .first-row {
 	padding-top: 20px;
 	background-color: white;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .home-run {
@@ -54,7 +91,7 @@ body {
 .welcome {
 	font-family: 'florencesansbold', sans-serif;
 	font-size: 17px;
-	color: #ededed;
+	color: #D8F0F0;
 	padding: 10% 0;
 }
 
