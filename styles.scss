@@ -101,11 +101,9 @@ body {
   background-color: #082947;
   .dropdown-menu{
     background-color: #082947;
-    ul {
       li {
-        display: inline-block;
+        width: 60px;
       }
-    }
   }
   .dropdown-toggle {
     background-color: #082947;
@@ -123,6 +121,7 @@ body {
   margin: 10px 0;
   border-radius: 2px;
   background-color: #05d881;
+  font-family: 'florencesansbold', sans-serif;
   font-size: 14px;
   img {
     padding: 0 20px 0 25px;
@@ -309,11 +308,7 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-body,
-html {
-  height: 100%;
-  background-color: #583e7e;
-}
+
 .nav .open > a {
   background-color: transparent;
 }
@@ -334,10 +329,10 @@ html {
   transition: all 0.5s ease;
 }
 #wrapper.toggled {
-  padding-left: 220px;
+  padding-left: 320px;
 }
 #wrapper.toggled #sidebar-wrapper {
-  width: 220px;
+  width: 320px;
 }
 #wrapper.toggled #page-content-wrapper {
   margin-right: -220px;
@@ -347,7 +342,7 @@ html {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  background: #1a1a1a;
+  background: #082947;
   height: 100%;
   left: 220px;
   margin-left: -220px;
@@ -364,6 +359,9 @@ html {
   padding-top: 70px;
   width: 100%;
 }
+
+
+
 /*-------------------------------*/
 /*     Sidebar nav styles        */
 /*-------------------------------*/
@@ -373,16 +371,22 @@ html {
   padding: 0;
   position: absolute;
   top: 0;
-  width: 220px;
+  width: 320px;
 }
 .sidebar-nav li {
+  margin-top: 30px;
   display: inline-block;
   line-height: 20px;
   position: relative;
   width: 100%;
+  font-family: 'florencesansbold', sans-serif;
+  font-size: 14px;
+  img {
+    padding-right: 40px;
+  }
 }
 .sidebar-nav li:before {
-  background-color: #1c1c1c;
+  background-color: #0076ff;
   content: '';
   height: 100%;
   left: 0;
@@ -394,32 +398,32 @@ html {
   z-index: -1;
 }
 .sidebar-nav li:first-child a {
-  background-color: #1a1a1a;
+  background-color: #082947;
   color: #ffffff;
 }
 .sidebar-nav li:nth-child(2):before {
-  background-color: #402d5c;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(3):before {
-  background-color: #4c366d;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(4):before {
-  background-color: #583e7e;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(5):before {
-  background-color: #64468f;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(6):before {
-  background-color: #704fa0;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(7):before {
-  background-color: #7c5aae;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(8):before {
-  background-color: #8a6cb6;
+  background-color: #0076ff;
 }
 .sidebar-nav li:nth-child(9):before {
-  background-color: #987dbf;
+  background-color: #0076ff;
 }
 .sidebar-nav li:hover:before {
   -webkit-transition: width 0.2s ease-in;
@@ -427,7 +431,7 @@ html {
   width: 100%;
 }
 .sidebar-nav li a {
-  color: #dddddd;
+  color: #fff;
   display: block;
   padding: 10px 15px 10px 30px;
   text-decoration: none;
@@ -438,7 +442,7 @@ html {
   width: 100%;
 }
 .sidebar-nav .dropdown-menu {
-  background-color: #222222;
+  background-color: #052039;
   border-radius: 0;
   border: none;
   box-shadow: none;
@@ -454,7 +458,7 @@ html {
 .sidebar-nav li.open a:active,
 .sidebar-nav li.open a:focus {
   background-color: transparent;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 .sidebar-nav > .sidebar-brand {
@@ -488,7 +492,7 @@ html {
 .hamburger.is-closed:before {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.35s ease-in-out;
-  color: #ffffff;
+  color: #fff;
   content: '';
   display: block;
   font-size: 14px;
@@ -576,6 +580,7 @@ html {
 /*-------------------------------*/
 /*          Dark Overlay         */
 /*-------------------------------*/
+/* 
 .overlay {
   position: fixed;
   display: none;
@@ -588,25 +593,5 @@ html {
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-/* SOME DEMO STYLES - NOT REQUIRED */
-body,
-html {
-  background-color: #583e7e;
-}
-body h1,
-body h2,
-body h3,
-body h4 {
-  color: rgba(255, 255, 255, 0.9);
-}
-body p,
-body blockquote {
-  color: rgba(255, 255, 255, 0.7);
-}
-body a {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: underline;
-}
-body a:hover {
-  color: #fff;
-}
+*/
+
