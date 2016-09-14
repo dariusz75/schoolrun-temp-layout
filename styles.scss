@@ -99,13 +99,26 @@ body {
   height: 50px;
   border-radius: 2px;
   background-color: #082947;
+  .dropdown-toggle {
+    background-color: #082947;
+    height: 100%;
+    padding: 15px 0 15px 0px;
+    img{
+      height: 100%;
+    }
+  }
 }
 
 .periods {
+  padding: 15px 0 0 0;
   height: 55px;
   margin: 10px 0;
   border-radius: 2px;
   background-color: #05d881;
+  font-size: 14px;
+  img {
+    padding: 0 20px 0 25px;
+  }
 }
 
 .travel-type {
