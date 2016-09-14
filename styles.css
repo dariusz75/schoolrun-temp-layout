@@ -60,6 +60,10 @@ body {
   height: 50px;
   border-radius: 2px;
   background-color: #082947; }
+  .small-menu-top .dropdown-menu {
+    background-color: #082947; }
+    .small-menu-top .dropdown-menu ul li {
+      display: inline-block; }
   .small-menu-top .dropdown-toggle {
     background-color: #082947;
     height: 100%;

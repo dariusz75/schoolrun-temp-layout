@@ -99,6 +99,14 @@ body {
   height: 50px;
   border-radius: 2px;
   background-color: #082947;
+  .dropdown-menu{
+    background-color: #082947;
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
   .dropdown-toggle {
     background-color: #082947;
     height: 100%;

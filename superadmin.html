@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Superadmin</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -35,7 +36,6 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/shape-2.svg">REPORTS<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li class="dropdown-header">Dropdown heading</li>
               <li><a href="#">Report 1</a></li>
               <li><a href="#">Report 2</a></li>
               <li><a href="#">Report 3</a></li>
@@ -79,13 +79,13 @@
               <img src="img/shape-3.svg"><span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <li><a href="#">Log out</a></li>
+              <li>Log out</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row second-row">
         <div class="col-xs-3 col-sm-2 col-md-2 col-lg-2">
           <div class="periods"><img src="img/shape-1.svg">BY WEEK</div>
         </div>
@@ -168,7 +168,10 @@
   $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
   });  
+
+  $(".dropdown-toggle").dropdown();
 });
+
     </script>
 </body>
 </html>
