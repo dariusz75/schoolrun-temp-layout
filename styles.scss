@@ -106,6 +106,24 @@ body {
   height: 50px;
   border-radius: 2px;
   background-color: #082947;
+  img{
+      height: 50%;
+      width: 50%;
+      margin: 0 0 0 10%;
+      display: inline-block;
+    }
+  button {
+    background-color: #082947;
+    height: 100%;
+    padding: 15px 0 15px 0px; 
+    display: inline-block;
+    
+    .caret {
+      margin: 0 0 0 20%;
+      padding: 0;
+      display: inline-block;
+    }
+  }
   .dropdown-menu{
       li {
         width: 75px;
@@ -114,14 +132,6 @@ body {
       }
   }
 
-  .dropdown-toggle {
-    background-color: #082947;
-    height: 100%;
-    padding: 15px 0 15px 0px;
-    img{
-      height: 100%;
-    }
-  }
 }
 
 

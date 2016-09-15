@@ -75,16 +75,24 @@ body {
   height: 50px;
   border-radius: 2px;
   background-color: #082947; }
+  .small-menu-top img {
+    height: 50%;
+    width: 50%;
+    margin: 0 0 0 10%;
+    display: inline-block; }
+  .small-menu-top button {
+    background-color: #082947;
+    height: 100%;
+    padding: 15px 0 15px 0px;
+    display: inline-block; }
+    .small-menu-top button .caret {
+      margin: 0 0 0 20%;
+      padding: 0;
+      display: inline-block; }
   .small-menu-top .dropdown-menu li {
     width: 75px;
     text-align: center;
     background-color: #082947; }
-  .small-menu-top .dropdown-toggle {
-    background-color: #082947;
-    height: 100%;
-    padding: 15px 0 15px 0px; }
-    .small-menu-top .dropdown-toggle img {
-      height: 100%; }
 
 .periods {
   padding: 10px 0 0 0;
