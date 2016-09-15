@@ -30,8 +30,17 @@ body {
   .first-row img {
     display: none; } }
 /* Small */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: yellow; } }
 /* Medium */
+@media (min-width: 992px) and (max-width: 1199px) {
+  body {
+    background-color: green; } }
 /* Large */
+@media (min-width: 1200px) {
+  body {
+    background-color: blue; } }
 .no-margin {
   margin: 0; }
 
@@ -60,10 +69,10 @@ body {
   height: 50px;
   border-radius: 2px;
   background-color: #082947; }
-  .small-menu-top .dropdown-menu {
+  .small-menu-top .dropdown-menu li {
+    width: 75px;
+    text-align: center;
     background-color: #082947; }
-    .small-menu-top .dropdown-menu li {
-      width: 60px; }
   .small-menu-top .dropdown-toggle {
     background-color: #082947;
     height: 100%;
@@ -72,13 +81,13 @@ body {
       height: 100%; }
 
 .periods {
-  padding: 15px 0 0 0;
+  padding: 15px 0px 0 0;
   height: 55px;
   margin: 10px 0;
   border-radius: 2px;
   background-color: #05d881;
   font-family: 'florencesansbold', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
   .periods img {
     padding: 0 20px 0 25px; }
 
