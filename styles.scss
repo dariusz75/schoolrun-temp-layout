@@ -81,9 +81,18 @@ body {
 .first-row {
 	padding-top: 20px;
 	background-color: white;
-  img {
-    width: 100%;
-    height: auto;
+  .top-logo {
+    background-image: url("img/group.svg");
+    background-repeat: no-repeat;
+    background-position: 15px 0px;
+    background-size: 50px;
+    height: 60px;
+    p {
+      padding: 7px 0 0 60px;
+    }
+  }
+  p.welcome {
+    padding: 10px 0 0 0;
   }
 }
 
