@@ -35,7 +35,7 @@ body {
 
 
 /* Extra Small */
-@media(max-width:568px){
+@media(max-width:768px){
   body{
     background-color: red;
   }
@@ -54,7 +54,7 @@ body {
 }
 
 /* Small */
-@media(min-width:569px) and (max-width:991px){
+@media(min-width:769px) and (max-width:991px){
   body{
     background-color: yellow;
   }
@@ -89,6 +89,14 @@ body {
     height: 60px;
     p {
       padding: 7px 0 0 60px;
+    }
+    /* Medium */
+    @media(min-width:992px) and (max-width:1199px){
+      background-size: 40px;
+      p {
+      padding: 8px 0 0 50px;
+      font-size: 1.5rem;
+    }
     }
   }
   p.welcome {
