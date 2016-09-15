@@ -79,16 +79,25 @@ body {
     height: 50%;
     width: 50%;
     margin: 0 0 0 10%;
-    display: inline-block; }
+    display: inline-block;
+    /* Small */
+    /* Extra Small */ }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .small-menu-top img {
+        width: 30%; } }
+    @media (max-width: 767px) {
+      .small-menu-top img {
+        display: none; } }
   .small-menu-top button {
     background-color: #082947;
     height: 100%;
     padding: 15px 0 15px 0px;
     display: inline-block; }
     .small-menu-top button .caret {
-      margin: 0 0 0 20%;
+      margin: 0;
       padding: 0;
-      display: inline-block; }
+      display: inline-block;
+      /* Extra Small */ }
   .small-menu-top .dropdown-menu li {
     width: 75px;
     text-align: center;
