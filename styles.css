@@ -28,7 +28,13 @@ body {
     background-color: red; }
 
   .first-row img {
-    display: none; } }
+    display: none; }
+
+  .periods {
+    text-align: center; }
+    .periods img {
+      padding: 100px;
+      margin-top: -10px; } }
 /* Small */
 @media (min-width: 768px) and (max-width: 991px) {
   body {
@@ -81,15 +87,35 @@ body {
       height: 100%; }
 
 .periods {
-  padding: 15px 0px 0 0;
+  padding: 10px 0 0 0;
   height: 55px;
   margin: 10px 0;
   border-radius: 2px;
   background-color: #05d881;
-  font-family: 'florencesansbold', sans-serif;
-  font-size: 1rem; }
+  /* Medium */
+  /* Small */
+  /* Extra Small */ }
+  .periods p {
+    display: inline-block;
+    top: 30px;
+    font-family: 'florencesansbold', sans-serif;
+    font-size: 1.2rem; }
   .periods img {
-    padding: 0 20px 0 25px; }
+    padding: 5px 20px 0 25px;
+    display: inline-block; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .periods img {
+      width: 35%;
+      padding: 5px 10px 0 15px; }
+    .periods p {
+      top: 33px;
+      font-size: 0.9rem; } }
+  @media (max-width: 767px) {
+    .periods img {
+      display: none; }
+    .periods p {
+      font-size: 1rem;
+      text-align: center; } }
 
 .travel-type {
   height: 55px;
