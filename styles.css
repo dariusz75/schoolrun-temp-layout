@@ -22,11 +22,9 @@ body {
   color: white;
   font-family: 'florencesansregular', sans-serif; }
 
+/* Small phones */
 /* Extra Small */
 @media (max-width: 768px) {
-  body {
-    background-color: red; }
-
   .first-row img {
     display: none; }
 
@@ -36,30 +34,23 @@ body {
       padding: 100px;
       margin-top: -10px; } }
 /* Small */
-@media (min-width: 769px) and (max-width: 991px) {
-  body {
-    background-color: yellow; } }
 /* Medium */
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    background-color: green; } }
 /* Large */
-@media (min-width: 1200px) {
-  body {
-    background-color: blue; } }
 .no-margin {
   margin: 0; }
 
 .first-row {
   padding-top: 20px;
-  background-color: white; }
+  background-color: white;
+  border-bottom: solid 1px rgba(150, 150, 150, 0.21); }
   .first-row .top-logo {
     background-image: url("img/group.svg");
     background-repeat: no-repeat;
     background-position: 15px 0px;
     background-size: 50px;
     height: 60px;
-    /* Medium */ }
+    /* Medium */
+    /* Extra Small */ }
     .first-row .top-logo p {
       padding: 7px 0 0 60px; }
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -68,8 +59,19 @@ body {
         .first-row .top-logo p {
           padding: 8px 0 0 50px;
           font-size: 1.5rem; } }
+    @media (max-width: 768px) {
+      .first-row .top-logo {
+        background-size: 35px; }
+        .first-row .top-logo p {
+          padding: 5px 0 0 50px;
+          font-size: 1.4rem; } }
   .first-row p.welcome {
-    padding: 10px 0 0 0; }
+    padding: 10px 0 0 0;
+    /* Extra Small */ }
+    @media (max-width: 768px) {
+      .first-row p.welcome {
+        padding: 0;
+        font-size: 1.4rem; } }
 
 .home-run {
   font-family: 'florencesansbold', sans-serif;
@@ -85,34 +87,37 @@ body {
   color: #D8F0F0;
   padding: 10% 0; }
 
-.small-menu-top {
+.logout-menu {
   height: 50px;
   border-radius: 2px;
   background-color: #082947; }
-  .small-menu-top img {
+  .logout-menu img {
     height: 50%;
     width: 50%;
     margin: 0 0 0 10%;
     display: inline-block;
     /* Small */
-    /* Extra Small */ }
+    /* Small phones */ }
     @media (min-width: 768px) and (max-width: 991px) {
-      .small-menu-top img {
+      .logout-menu img {
         width: 30%; } }
-    @media (max-width: 767px) {
-      .small-menu-top img {
+    @media only screen and (max-width: 480px) {
+      .logout-menu img {
         display: none; } }
-  .small-menu-top button {
+  .logout-menu button {
     background-color: #082947;
     height: 100%;
     padding: 15px 0 15px 0px;
     display: inline-block; }
-    .small-menu-top button .caret {
+    .logout-menu button:hover {
+      background-color: #082947; }
+    .logout-menu button:visited {
+      background-color: #082947; }
+    .logout-menu button .caret {
       margin: 0;
       padding: 0;
-      display: inline-block;
-      /* Extra Small */ }
-  .small-menu-top .dropdown-menu li {
+      display: inline-block; }
+  .logout-menu .dropdown-menu li {
     width: 75px;
     text-align: center;
     background-color: #082947; }
