@@ -518,7 +518,7 @@ body {
   z-index: -1;
 }
 
-.sidebar-nav li:first-child a {
+.sidebar-nav a {
   background-color: #082947;
   color: #ffffff;
 }
@@ -583,7 +583,22 @@ body {
   padding: 0;
   position: relative;
   width: 100%;
+  border-left: solid 3px #0076ff;
+  a {
+    background-color: #052039;
+    
+  }
 }
+
+.dropdown-menu>li:first-child>a:first-child {
+  border-radius: 0px;
+}
+
+.dropdown-menu>li:last-child>a:first-child {
+  border-radius: 0px;
+}
+
+
 
 .sidebar-nav li a:hover,
 .sidebar-nav li a:active,
