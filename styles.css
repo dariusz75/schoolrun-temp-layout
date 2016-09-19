@@ -78,14 +78,14 @@ body {
   font-size: 20px;
   padding: 12% 0;
   text-align: left;
-  color: #082947;
-  border-right: solid 2px #e0e0e0; }
+  color: #082947; }
 
 .welcome {
   font-family: 'florencesansbold', sans-serif;
   font-size: 17px;
   color: #D8F0F0;
-  padding: 10% 0; }
+  padding-left: 10px !important;
+  border-left: solid 2px #e0e0e0; }
 
 .logout-menu {
   height: 50px;
@@ -95,6 +95,7 @@ body {
     height: 50%;
     width: 50%;
     margin: 0 0 0 10%;
+    padding: 0;
     display: inline-block;
     /* Small */
     /* Small phones */ }
@@ -127,31 +128,40 @@ body {
   height: 55px;
   margin: 10px 0;
   border-radius: 2px;
+  background-color: grey;
+  border: solid 1px rgba(151, 151, 151, 0.35); }
+
+p {
+  display: inline-block;
+  top: 30px;
+  font-family: 'florencesansbold', sans-serif;
+  font-size: 1.2rem; }
+
+img {
+  padding: 5px 20px 0 25px;
+  display: inline-block; }
+
+/* Medium */
+/* Small */
+@media (min-width: 768px) and (max-width: 991px) {
+  img {
+    width: 35%;
+    padding: 5px 10px 0 15px; }
+
+  p {
+    top: 33px;
+    font-size: 0.9rem; } }
+/* Extra Small */
+@media (max-width: 767px) {
+  img {
+    display: none; }
+
+  p {
+    font-size: 1rem;
+    text-align: center; } }
+.period-active {
   background-color: #05d881;
-  /* Medium */
-  /* Small */
-  /* Extra Small */ }
-  .periods p {
-    display: inline-block;
-    top: 30px;
-    font-family: 'florencesansbold', sans-serif;
-    font-size: 1.2rem; }
-  .periods img {
-    padding: 5px 20px 0 25px;
-    display: inline-block; }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .periods img {
-      width: 35%;
-      padding: 5px 10px 0 15px; }
-    .periods p {
-      top: 33px;
-      font-size: 0.9rem; } }
-  @media (max-width: 767px) {
-    .periods img {
-      display: none; }
-    .periods p {
-      font-size: 1rem;
-      text-align: center; } }
+  border: none; }
 
 .travel-type {
   height: 55px;
@@ -159,7 +169,8 @@ body {
   background-color: #617688; }
 
 .travel-type a img {
-  margin: 20px auto; }
+  margin: 20px auto;
+  padding: 0; }
 
 .left-section {
   /* background-color: #55D9D9; */
