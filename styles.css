@@ -39,6 +39,12 @@ body {
 .no-margin {
   margin: 0; }
 
+.whole-page-column {
+  padding-left: 0; }
+
+.side-nav-column {
+  padding-right: 0; }
+
 .first-row {
   padding-top: 20px;
   background-color: white;
@@ -135,7 +141,7 @@ p {
   display: inline-block;
   top: 30px;
   font-family: 'florencesansbold', sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1rem; }
 
 img {
   padding: 5px 20px 0 25px;
@@ -329,13 +335,14 @@ body {
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   padding-left: 0;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  width: 100%; }
 
 #wrapper.toggled {
   padding-left: 245px; }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 245px; }
+  width: inherit; }
 
 #wrapper.toggled #page-content-wrapper {
   margin-right: -220px;
@@ -380,7 +387,7 @@ body {
   position: relative;
   width: 100%;
   font-family: 'florencesansbold', sans-serif;
-  font-size: 14px; }
+  font-size: 1rem; }
   .sidebar-nav li img {
     padding: 0 40px 0 0; }
 

@@ -36,7 +36,7 @@
 
     <div class="container-fluid">
       <div class="row general-row">
-        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 side-nav-column"> 
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-1 side-nav-column"> 
 
           <!-- Sidebar -->
           <div id="wrapper">
@@ -74,7 +74,7 @@
 
 
         </div>
-        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 whole-page-column"> 
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-11 whole-page-column"> 
 
       <div class="row first-row">
         <div class=" top-logo col-xs-4 col-sm-3 col-md-2 col-lg-2">
@@ -152,12 +152,13 @@
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
     <script type="text/javascript">
       $(document).ready(function () {
-  var trigger = $('.hamburger'),
-      overlay = $('.overlay'),
-      isClosed = false;
+      var trigger = $('.hamburger'),
+      isClosed = false,
+      sidebarWidth = 70;
 
     trigger.click(function () {
       hamburger_cross();      
@@ -178,7 +179,32 @@
   
   $('[data-toggle="offcanvas"]').click(function () {
         $('#wrapper').toggleClass('toggled');
+        if($('#wrapper').hasClass('toggled')){          
+          $('.side-nav-column').removeClass( "col-lg-1" ).addClass( "col-lg-2" );
+          $('.whole-page-column').removeClass( "col-lg-11" ).addClass( "col-lg-10" );
+          $('#sidebar-wrapper').width($('#wrapper').width());
+        } else {
+          $('#sidebar-wrapper').width(sidebarWidth);
+          $('.side-nav-column').removeClass( "col-lg-2" ).addClass( "col-lg-1" );
+          $('.whole-page-column').removeClass( "col-lg-10" ).addClass( "col-lg-11" );
+        }
+
   });  
+
+
+  $('#sidebar-wrapper').hover(function () {
+        $('#wrapper').toggleClass('toggled');
+        if($('#wrapper').hasClass('toggled')){          
+          $('.side-nav-column').removeClass( "col-lg-1" ).addClass( "col-lg-2" );
+          $('.whole-page-column').removeClass( "col-lg-11" ).addClass( "col-lg-10" );
+          $('#sidebar-wrapper').width($('#wrapper').width());
+        } else {
+          $('#sidebar-wrapper').width(sidebarWidth);
+          $('.side-nav-column').removeClass( "col-lg-2" ).addClass( "col-lg-1" );
+          $('.whole-page-column').removeClass( "col-lg-10" ).addClass( "col-lg-11" );
+        }
+
+  }); 
 
   $(".dropdown-toggle").dropdown();
 });
