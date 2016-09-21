@@ -28,7 +28,7 @@
 }
 
 body {
-  //background-color: #d8d8d8;
+  background-color: #d8d8d8;
   color: white;
   font-family: 'florencesansregular', sans-serif;
 }
@@ -253,6 +253,10 @@ body {
   background-color: #05d881;
   border: none;
 }
+
+.travel-type-active {
+    background-color: green;
+  }
 
 .travel-type {
   height: 55px;
