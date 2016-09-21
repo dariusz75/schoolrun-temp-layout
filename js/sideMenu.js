@@ -60,7 +60,6 @@ $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
           $('.side-nav-column').removeClass( "col-lg-2" ).addClass( "col-lg-1");
           $('.whole-page-column').removeClass( "col-lg-10" ).addClass( "col-lg-11");
           $('#sidebar-wrapper').width(sidebarWidth);
-
           $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
         }
 
