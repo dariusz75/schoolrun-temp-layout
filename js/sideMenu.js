@@ -45,7 +45,7 @@ $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
   });  
 
 
-  $('#sidebar-wrapper').hover(function () {
+   $('.sidebar-nav').hover(function () {
 
         $('#wrapper').toggleClass('toggled');
 
@@ -63,7 +63,8 @@ $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
           $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
         }
 
-  });  
+  }); 
+  
 
   $(".dropdown-toggle").dropdown();
 
