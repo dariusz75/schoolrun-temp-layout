@@ -137,6 +137,12 @@ body {
   background-color: grey;
   border: solid 1px rgba(151, 151, 151, 0.35); }
 
+.period-active {
+  background-color: #05d881;
+  border: none; }
+  .period-active p {
+    color: #fff; }
+
 p {
   display: inline-block;
   top: 30px;
