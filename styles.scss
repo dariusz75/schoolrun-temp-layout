@@ -33,8 +33,8 @@ body {
   background-color: #d8d8d8;
   color: white;
   font-family: 'florencesansregular', sans-serif;
-  overflow: auto;
 }
+
 
 .clearfix:after { 
    content: " ";
@@ -42,6 +42,7 @@ body {
    height: 0; 
    clear: both;
 }
+
 
 /* Small phones */
 @media only screen and (max-width : 480px) {
@@ -95,6 +96,7 @@ body {
 
 .whole-page-column {
   padding-left: 0;
+  overflow: auto;
 }
 
 .side-nav-column {
@@ -212,12 +214,27 @@ body {
   height: 55px;
   margin: 10px 0;
   border-radius: 2px;
-  background-color: grey;
-  border: solid 1px rgba(151, 151, 151, 0.35);
+  background-color: #fff;
+  border: solid 1px #617688;
+  p {
+    color: #617688;
+  }
+
 }
+
+
+.period-active {
+  background-color: #05d881;
+  border: none;
+  p {
+    color: #fff;
+  }
+}
+
+
   p {
     display: inline-block;
-    
+    color: #fff;
     top: 30px;
     font-family: 'florencesansbold', sans-serif;
     font-size: 1rem;
@@ -256,17 +273,6 @@ body {
     }
   }
 
-  
-
-
-.period-active {
-  background-color: #05d881;
-  border: none;
-}
-
-.travel-type-active {
-    background-color: green;
-  }
 
 .travel-type {
   height: 55px;
@@ -277,6 +283,7 @@ body {
 .travel-type a img {
   margin: 20px auto;
   padding: 0;
+  fill: red;
 }
 
 .left-section {
@@ -445,10 +452,7 @@ body {
 /*-------------------------------*/
 /*           VARIABLES           */
 /*-------------------------------*/
-body {
-  position: relative;
-  overflow-x: hidden;
-}
+
 
 .nav .open > a {
   background-color: transparent;

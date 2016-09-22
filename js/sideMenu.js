@@ -1,14 +1,18 @@
 $(document).ready(function () {
       var trigger = $('.hamburger'),
       isClosed = false,
-      sidebarWidth = 70;
+      sidebarWidth = 70,
+      sidebarWidthBuffer = 20,
+      sidebarExpansionWidth = 245,
+      wholePageColumnWidth = $('.whole-page-column').width();
+
 
     trigger.click(function () {
       hamburger_cross();      
     });
 
 
-$('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
+//$('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
 
     function hamburger_cross() {
 
@@ -35,11 +39,13 @@ $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
           $('.whole-page-column').addClass( "col-lg-10");
           $('#sidebar-wrapper').width($('#wrapper').width());
           $('.whole-page-column').css({top: 0, left: $('.side-nav-column').width()+20, position:'fixed'})
+
+
         } else {
           $('.side-nav-column').removeClass( "col-lg-2" ).addClass( "col-lg-1");
           $('.whole-page-column').removeClass( "col-lg-10" ).addClass( "col-lg-11");
           $('#sidebar-wrapper').width(sidebarWidth);
-          $('.whole-page-column').css({top: 0, left: 90, position:'fixed'})
+          $('.whole-page-column').css({top: 0, left: sidebarWidth + sidebarWidthBuffer, width: wholePageColumnWidth /*+  sidebarExpansionWidth */, position:'fixed'})
         }
 
   });  
