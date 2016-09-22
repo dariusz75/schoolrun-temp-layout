@@ -186,6 +186,9 @@ img {
   margin: 20px auto;
   padding: 0; }
 
+.travel-type-active {
+  background-color: #00b4ff; }
+
 .left-section {
   /* background-color: #55D9D9; */
   height: auto; }
