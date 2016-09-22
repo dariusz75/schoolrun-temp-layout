@@ -39,68 +39,23 @@ body {
 .no-margin {
   margin: 0; }
 
-.whole-page-column {
-  padding-left: 0; }
-
-.side-nav-column {
-  padding-right: 0; }
-
-.first-row {
-  padding-top: 20px;
+.top-bar {
+  padding-left: 80px;
+  border-radius: 0;
   background-color: white;
   border-bottom: solid 2px rgba(150, 150, 150, 0.21); }
-  .first-row .top-logo {
-    background-image: url("img/group.svg");
-    background-repeat: no-repeat;
-    background-position: 15px 0px;
-    background-size: 50px;
-    height: 60px;
-    /* Medium */
-    /* Extra Small */ }
-    .first-row .top-logo p {
-      padding: 7px 0 0 60px; }
-    @media (min-width: 992px) and (max-width: 1199px) {
-      .first-row .top-logo {
-        background-size: 40px; }
-        .first-row .top-logo p {
-          padding: 8px 0 0 50px;
-          font-size: 1.5rem; } }
-    @media (max-width: 768px) {
-      .first-row .top-logo {
-        background-size: 35px; }
-        .first-row .top-logo p {
-          padding: 5px 0 0 50px;
-          font-size: 1.4rem; } }
-  .first-row p.welcome {
-    padding: 10px 0 0 0;
-    /* Extra Small */ }
-    @media (max-width: 768px) {
-      .first-row p.welcome {
-        padding: 0;
-        font-size: 1.4rem; } }
-
-.home-run {
-  font-family: 'florencesansbold', sans-serif;
-  font-size: 20px;
-  padding: 12% 0;
-  text-align: left;
-  color: #082947; }
-
-.welcome {
-  font-family: 'florencesansbold', sans-serif;
-  font-size: 17px;
-  color: #D8F0F0;
-  padding-left: 10px !important;
-  border-left: solid 2px #e0e0e0; }
+  .top-bar .container-fluid {
+    padding: 0 0 20px 0; }
 
 .logout-menu {
   height: 50px;
   border-radius: 2px;
-  background-color: #082947; }
+  background-color: #082947;
+  margin: 30px 0 0 0 !important; }
   .logout-menu img {
     height: 50%;
     width: 50%;
-    margin: 0 0 0 10%;
+    margin: 0 0 0 0;
     padding: 0;
     display: inline-block;
     /* Small */
@@ -111,23 +66,14 @@ body {
     @media only screen and (max-width: 480px) {
       .logout-menu img {
         display: none; } }
-  .logout-menu button {
-    background-color: #082947;
-    height: 100%;
-    padding: 15px 0 15px 0px;
-    display: inline-block; }
-    .logout-menu button:hover {
-      background-color: #082947; }
-    .logout-menu button:visited {
-      background-color: #082947; }
-    .logout-menu button .caret {
-      margin: 0;
-      padding: 0;
-      display: inline-block; }
-  .logout-menu .dropdown-menu li {
-    width: 75px;
-    text-align: center;
-    background-color: #082947; }
+  .logout-menu .dropdown-menu {
+    color: #082947; }
+
+.whole-page-column {
+  padding-left: 0; }
+
+.side-nav-column {
+  padding-right: 0; }
 
 .periods {
   padding: 10px 0 0 0;
